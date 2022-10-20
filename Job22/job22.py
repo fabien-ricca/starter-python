@@ -106,3 +106,23 @@ def myClean(a):
     return re.sub(' +', ' ', a)
 
 # print(myClean("je  suis  une  chaine"))
+
+
+while True:
+    var1 = input("Veuillez entrer une chaîne de caractères : ")
+    var2 = input("Quelle action souhaitez-cous effectuer ? ")
+    if type(var1) is str and var1 != "":
+        if var2 == "upper":
+            print(myUpper(var1))
+
+        elif var2 == "lower":
+            print(myLower(var1))
+
+        elif var2 == "title":
+            print(myTitle(var1))
+
+        elif var2 == "clean":
+            print(myClean(var1))
+
+    else: 
+        var1 = input("Veuillez entrer une chaîne de caractères : ")
